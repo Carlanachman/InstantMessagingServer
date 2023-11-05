@@ -1,39 +1,41 @@
-# Instant Messaging Server
+# Messagerie Instantanée
 
 ## About
-C project in 7 steps - Enabling terminals to communicate with each other.
+Projet en C en 7 étapes - Permettant de faire communiquer des terminaux entre eux.
 
-## Container
-Here's a Projet_SE file made up of :
-- a file serveurProjet.c
-- a  file clientProjet.c
+## Contenant
+Voici un fichier Projet_SE constitué :
+- d'un fichier serveurProjet.c
+- d'un fichier clientProjet.c
 
 ## Installation
-Launch the project:
+1. Telecharger le fichier zip Projet_SE
+2. Lancer le projet:
 
-	a) Open at least two terminals, and for each one "point" to the Projet_SE file.
-We recommend that you place it in your Documents folder and run the following commands:
+	a) Ouvrer deux terminaux au moins, et pour chacun "dirigez vous" vers le fichier Projet_SE
+
+	Nous vous recommandons de le placer dans vos Documents et d'executer les commandes suivantes:
   		cd Documents
   		cd Projet_SE
 
-  	b) Run and compile the server in one of the terminals:
-      	unlink MySock (if you have a file of this name in the folder, usually after the 1st use of the messaging system)
+  	b) Exécuter et compliler le serveur dans un des terminaux:
+      	unlink MySock (si vous avez un fichier de ce nom dans le dossier, en general apres la 1ere utilisation de la messagerie )
       	clang -Wall serveurProjet.c
   		./a.out
 
-  	c) Run and compile clients ( max 10 ) from other terminals (one client per terminal):
-		clang -Wall serveurProject.c
+  	c) Exécuter et compliler des clients ( max 10 ) d'autres terminaux (un client par terminal):
+		clang -Wall serveurProjet.c
   		./a.out
 
 
-3. The ctrl+c command allows you to interrupt the display of any message received during the interruption.
+3. La commande ctrl+c permet interruption de l’affichage  Des qu'un message saisi il affiche tous les messages qu’il a reçu durant l’interruption.
 
 
-## Project status
-Completed, despite some uncertainty about the display of messages received after the interruption.
-You have to press ctrl+c again to see them, and the 1st message sent after the interruption is still received.
+## Status du Projet
+Terminé, malgré quelques incertitudes sur l'affichage des messages reçus après l'interruption.
+Il faut appuyer de nouveau sur ctrl+c pour les voir et le 1er message envoyé apres l'interruption est tout de meme recu
 
-### AUTHORS
+### AUTEURS
 Noam TORDJMAN
 Carla NACHMAN
 
